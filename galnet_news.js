@@ -11,12 +11,13 @@ const section = document.querySelector('section');
             }
 
             function populateNews(jsonObj){
-                const myH1 = document.createElement('h1');
-                myH1.textContent = jsonObj[1].title;
-                section.appendChild(myH1);
-
-                const myDiv = document.createElement('div');
-                //myDiv.textContent = jsonObj[1].body;
-                myDiv.innerHTML = jsonObj[1].body;
-                section.appendChild(myDiv);
+                for(let i = 0; i < 6; i++){
+                    const myH1 = document.createElement('h1');
+                    myH1.textContent = jsonObj[i].title;
+                    section.appendChild(myH1);
+    
+                    const myDiv = document.createElement('div');
+                    myDiv.innerHTML = jsonObj[i].body;
+                    section.appendChild(myDiv);
+                }
             }
