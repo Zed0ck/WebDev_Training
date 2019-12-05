@@ -10,14 +10,14 @@ body {
 
 .news {
     background: rgb(39, 39, 39);
-    border: 1px solid grey;
+    border: 1px solid hotpink;
     padding: 10px;
-    box-shadow: 3px 4px grey;
+    box-shadow: 3px 4px hotpink;
     margin: 15px;
     color: blanchedalmond;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Roboto Mono', monospace;
     color: honeydew;
 }
@@ -25,10 +25,16 @@ h1, h2 {
 h1 {
     font-size: 4rem;
     text-align: center;
+    color: hotpink;
 }
 
 h2 {
     font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: hotpink;
 }
 
 header h1 {
@@ -37,5 +43,6 @@ header h1 {
 
 section p {
     margin: 5px 0;;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
