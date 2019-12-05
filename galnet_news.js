@@ -12,12 +12,17 @@ const section = document.querySelector('section');
 
             function populateNews(jsonObj){
                 for(let i = 0; i < 6; i++){
-                    const myH1 = document.createElement('h1');
-                    myH1.textContent = jsonObj[i].title;
-                    section.appendChild(myH1);
+                    const myDiv1 = document.createElement('div');
+                    myDiv1.className = 'news';
+                    section.appendChild(myDiv1);
+                    
+
+                    const myH2 = document.createElement('h2');
+                    myH2.textContent = jsonObj[i].title;
+                    myDiv1.appendChild(myH2);
     
-                    const myDiv = document.createElement('div');
-                    myDiv.innerHTML = jsonObj[i].body;
-                    section.appendChild(myDiv);
+                    const myDiv2 = document.createElement('div');
+                    myDiv2.innerHTML = jsonObj[i].body;
+                    myDiv1.appendChild(myDiv2);
                 }
             }
