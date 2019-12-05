@@ -11,7 +11,7 @@ const section = document.querySelector('section');
             }
 
             function populateNews(jsonObj){
-                for(let i = 0; i < 6; i++){
+                for(let i = 0; i < jsonObj.length; i++){
                     const myDiv1 = document.createElement('div');
                     myDiv1.className = 'news';
                     section.appendChild(myDiv1);
@@ -19,7 +19,7 @@ const section = document.querySelector('section');
                     const myH3 = document.createElement('h3');
                     myH3.textContent = jsonObj[i].date;
                     myDiv1.appendChild(myH3);
-                    
+
                     const myH2 = document.createElement('h2');
                     myH2.textContent = jsonObj[i].title;
                     myDiv1.appendChild(myH2);
