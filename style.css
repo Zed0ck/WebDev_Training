@@ -46,3 +46,39 @@ section p {
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
 }
+
+nav {
+    height: 40px;
+    margin-top: 10px;
+}
+
+nav ul {
+    line-height: 20px;
+    list-style-type: none;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+nav li {
+    padding-right: 10 px;
+}
+
+nav a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 3px rgb(27, 27, 27);
+}
+
+nav h1 {
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
